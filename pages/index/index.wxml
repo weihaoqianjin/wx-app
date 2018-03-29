@@ -1,0 +1,8 @@
+<view class="ul">
+  <view class="li" bindtap="showSelectSex">选择性别弹框（dicSheet）</view>
+  <view class="li" bindtap="showDatePicker">选择日期弹框</view>
+  <view class="li" bindtap="showPerfectInfo">完善信息弹框</view>
+</view>
+<dic-select dic-select-title="{{title}}" dic-items="{{items}}" bindselectevent="selectSex"  dic-show="{{selectSexFlag}}"></dic-select>
+<date-picker value="{{initDate}}" isShow="{{datePickerFlag}}" bindsureclick="datePickerOnSureClick" bindcancelclick="datePickerOnCancelClick" />
+<perfect-info name="{{name}}" mobile="{{mobile}}" is-show="{{perfectInfoFlag}}" bindconfirmevent="perfectInfoMsg"></perfect-info>

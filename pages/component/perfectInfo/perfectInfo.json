@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents":{
+    "dic-select":"../choice/choice",
+    "date-picker":"../date-picker/date-picker"
+  }
+}

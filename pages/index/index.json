@@ -1,0 +1,7 @@
+{
+  "usingComponents":{
+    "dic-select":"../component/choice/choice",
+    "date-picker":"../component/date-picker/date-picker",
+    "perfect-info":"../component/perfectInfo/perfectInfo"
+  }
+}

@@ -1,0 +1,8 @@
+<!--pages/component/choice/choice.wxml-->
+<view class="out_box" wx:if="{{dicShow}}" >
+<view class="mask"></view>
+<view class="dicSelectBox">
+  <view class="close"><i class="icon" bindtap="close"></i></view>
+  <view class="title">{{dicSelectTitle}}</view>
+  <view class="{{curKey.value==item.value?'item active':'item'}}" wx:for="{{dicItems}}" wx:key="" bindtap="select" data-index="{{index}}">{{item.value}}<image src="choiced.png" class="selected" hidden='{{curKey.value!=item.value}}'/></view>
+</view></view>

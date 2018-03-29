@@ -1,0 +1,25 @@
+<view wx:if="{{showPicker}}" class="date-picker" catchtouchmove="preventTouchMove">
+    <view class="date-picker-mask" catchtouchstart="onTouchmask"></view>
+    <view class="date-picker-content" catchtouchstart="onTouchmask">
+        <view class="title">请选择出生日期</view>
+        <view class="date-picker-content-center" catchtouchstart="onTouchmask">
+            <picker-view class="date-picker-content-item" indicator-class="date-indicator" value="{{tempYearPos}}" bindchange="year_onChange">
+                <picker-view-column>
+                    <view wx:for="{{years}}" wx:key="" class="{{index==tempYearPos?'active':'date'}}">{{item}}年</view>
+                </picker-view-column>
+            </picker-view>
+            <picker-view class="date-picker-content-item" indicator-class="date-indicator" value="{{tempMonthPos}}" bindchange="month_onChange">
+                <picker-view-column>
+                    <view wx:for="{{months}}" wx:key="" class="{{index==tempMonthPos?'active':'date'}}">{{item}}月</view>
+                </picker-view-column>
+            </picker-view>
+            <picker-view class="date-picker-content-item" indicator-class="date-indicator" value="{{tempDayPos}}" bindchange="day_onChange">
+                <picker-view-column>
+                    <view wx:for="{{days}}" wx:key="" class="{{index==tempDayPos?'active':'date'}}">{{item}}日</view>
+                </picker-view-column>
+            </picker-view>
+        </view>
+        <view class="date-picker-content-sure" catchtouchend="onSureClick">确认</view>
+        <view class="date-picker-content-cancel"><i class="icon" catchtouchend="onCacnelClick"></i></view>
+    </view>
+</view>

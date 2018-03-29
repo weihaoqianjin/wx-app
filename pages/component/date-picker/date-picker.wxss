@@ -1,0 +1,126 @@
+.title{
+    padding:20px 16px 10px;
+    color:#000;
+}
+.active{
+    color:#45daf8;
+    text-align:center;
+    font-size: 36rpx;
+    line-height:80rpx;
+}
+.date{
+    text-align:center;
+    font-size: 36rpx;
+    line-height:80rpx;
+    color:#353535;
+}
+.date-indicator{
+    height: 80rpx;
+}
+.date-picker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 209;
+}
+
+.date-picker-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #818181;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 210;
+}
+
+.date-picker-content {
+    position: absolute;
+    top: 104px;
+    left: 0;
+    width: 654rpx;
+    margin-right: 48rpx;
+    margin-left: 48rpx;
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 233;
+}
+
+.date-picker-content-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 112rpx;
+    justify-content: space-between;
+}
+
+.hover-class{
+    background-color: #e6e6e6;
+}
+
+.date-picker-content-sure {
+    margin:20px 16px;
+    text-align:center;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #45daf8;
+    font-size: 16px;
+    line-height: 42px;
+    box-shadow: 0 4px 8px rgba(69,218,248,.5);
+}
+
+.date-picker-content-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    padding:0 16px;
+}
+
+.date-picker-content-item {
+    width: 33.3%;
+    height: 290rpx;
+    text-align: center;
+}
+.date-picker .date-picker-content-cancel i{
+    position: absolute;
+    top:-50px;
+    right:20px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-image: -webkit-linear-gradient(left,#fff,#fff),-webkit-linear-gradient(top,#fff,#fff);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 3px center, center 3px;
+    background-size: 16px 2px, 2px 16px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.date-picker .date-picker-content-cancel::before{
+    position:absolute;
+    content:"";
+    top:19px;
+    right:30px;
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background-color:#000;
+}
+.date-picker .date-picker-content-cancel::after{
+    position: absolute;
+    content: "";
+    top: -24px;
+    right:32px;
+    width: 2px;
+    height: 46px;
+    background-color: #fff;
+}
